@@ -2,35 +2,50 @@
   text-align: center;
   display: flex;
   flex-direction: row;
+  width: 100%;
+  height: 100vh;
 }
 
-.sideBar{
-  height: auto;
-  width: 20vw;
+.sideBar {
+  height: 100%;
+  width: 20%;
   background-color: #1f1f1f;
 }
 
-.taskList{
-  height: 100vh;
-  width: 80vw;
+.taskList {
+  height: auto;
+  width: 80%;
   padding: 50px 50px 0px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
 
-.list{
-  height: 100%;
+.list {
+  height: 90%;
 }
 
-input{
+.task {
+  padding: 5px;
+}
+
+.createListButton {
+  width: 100%;
+  background-color: #1f1f1f;
+  border-color: #181818;
+  border-width: 0px;
+  border-top-width: 1px;
+  border-radius: 0px;
+}
+
+input {
   padding: 0px 5px;
 }
 
-hr{
+hr {
   width: 100%;
 }
 
-h2{
+h2 {
   margin: 5px;
 }
