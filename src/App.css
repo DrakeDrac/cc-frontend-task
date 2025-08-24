@@ -12,6 +12,26 @@
   background-color: #1f1f1f;
 }
 
+.taskListItem {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.taskListItem.selected {
+  background-color: #323232;
+}
+
+.editingHeading {
+  background: transparent;
+  border: none;
+  width: 100%;
+  outline: none;
+}
+
 .taskList {
   height: auto;
   width: 80%;
@@ -21,12 +41,64 @@
   flex-direction: column;
 }
 
+.addTaskContainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.addTaskContainerText {
+  display: flex;
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #171717;
+  outline: none;
+  width: auto;
+  display: flex;
+  flex-grow: 1;
+  border-radius: 5px;
+}
+
+.addTaskContainerButton {
+  padding: 8px 16px;
+  background-color: #1c1c1c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.tasksContainer {
+  height: 90%;
+  overflow-y: auto;
+  width: 100%;
+}
+
 .list {
   height: 90%;
+  overflow-y: auto;
 }
 
 .task {
   padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.taskText{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.editingTask {
+  background: transparent;
+  border: none;
+  padding: 0;
 }
 
 .createListButton {
